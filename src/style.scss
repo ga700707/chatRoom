@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cus-btn {
+  height: 40px;
+  width: 100px;
+  color: white;
+  border: 2px solid;
+  z-index: 1;
+  cursor: pointer;
+  @apply absolute;
+  @apply right-0;
+  /* @apply color-blue; */
+  @apply bg-slate-800 border-slate-600;
+  @apply text-center;
+  &:hover {
+    @apply bg-slate-600 border-slate-800;
+  }
+  &:active {
+    @apply bg-slate-600 border-slate-800;
+  }
+  &:focus {
+    @apply bg-slate-600 border-slate-800;
+  }
+}
