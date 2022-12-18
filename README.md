@@ -1,3 +1,8 @@
+# Google雲端測試位置
+```sh
+http://35.202.181.48
+```
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -76,5 +81,7 @@ npx tailwindcss -i ./src/style.scss -o ./dist/output.css --watch
 ```
 
 ### Pm2 - SocketIO
+```sh
 sudo npm install pm2 -g
 sudo pm2 start node index.js
+```
