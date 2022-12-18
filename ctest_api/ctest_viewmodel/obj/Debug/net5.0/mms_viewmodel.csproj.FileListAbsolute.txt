@@ -1,0 +1,15 @@
+﻿/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/bin/Debug/net5.0/ctest_viewmodel.deps.json
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/bin/Debug/net5.0/ctest_viewmodel.dll
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/bin/Debug/net5.0/ref/ctest_viewmodel.dll
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/bin/Debug/net5.0/ctest_viewmodel.pdb
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.AssemblyInfoInputs.cache
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.AssemblyInfo.cs
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.csproj.CoreCompileInputs.cache
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/staticwebassets/ctest_viewmodel.StaticWebAssets.Manifest.cache
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/staticwebassets/ctest_viewmodel.StaticWebAssets.xml
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/scopedcss/bundle/ctest_viewmodel.styles.css
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.RazorTargetAssemblyInfo.cache
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.dll
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ref/ctest_viewmodel.dll
+/Users/liouting-hou/Desktop/project/mooto/ctest_api/ctest_viewmodel/obj/Debug/net5.0/ctest_viewmodel.pdb

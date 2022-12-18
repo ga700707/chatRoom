@@ -1,0 +1,14 @@
+﻿dotnet ef dbcontext scaffold "server=35.221.227.128;port=3306;user=root;password=tku8833122;database=Vclp;" MySql.Data.EntityFrameworkCore -o Entities -f
+
+dotnet ef dbcontext scaffold "Server=35.221.227.12;" MySql.Data.EntityFrameworkCore  -o Models
+
+
+====ok====
+dotnet ef dbcontext scaffold "server=35.236.165.181;port=3306;user=root;password=ga700807;database=chatRoom;" Pomelo.EntityFrameworkCore.MySql  -o Entities -f
+
+
+modelBuilder.Query<views_accountgroup>().ToView("views_accountgroup");
+modelBuilder.Query<views_membergroup>().ToView("views_membergroup");
+
+sudo systemctl restart kestrel-helloapp.service
+openssl pkcs12 -export -out ctest.pfx -inkey private.key -in certificate.crt

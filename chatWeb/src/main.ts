@@ -5,6 +5,8 @@ import SocketIO from 'socket.io-client'
 import App from "./App.vue";
 import router from "./router";
 import VueSocketIO from 'vue-socket.io'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import "./assets/main.css";
 // import "/dist/output.css"
 import "./style.scss"
@@ -32,4 +34,6 @@ optionsVueIO.install = (function (app: typeof App) {
 app.use(createPinia());
 app.use(router);
 app.use(optionsVueIO) 
+app.use(VueAxios, axios)
+app.provide('axios', app.config.globalProperties.axios)  // provide 'axios'
 app.mount("#app");

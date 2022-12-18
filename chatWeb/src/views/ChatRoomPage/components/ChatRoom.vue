@@ -7,19 +7,20 @@ import CommunityIcon from "../../../components/icons/IconCommunity.vue";
 import SupportIcon from "../../../components/icons/IconSupport.vue";
 import { UserTypeEnum } from "@/enum/user-type-enum";
 import io from "socket.io-client";
-
+import axios from "axios";
+import { inject } from "vue";
 import _ from "lodash";
 </script>
 <script lang="ts">
-const socket = io("http://34.172.211.20:3000");
-
+const ip = "http://34.172.211.20";
+const socket = io(ip + ":3000");
+const apiUrl = ip + ":5000";
 export default {
   sockets: {
     connect: function () {
       console.log("socket connected");
     },
   },
-
   data() {
     return {
       displayName: "",
@@ -45,6 +46,7 @@ export default {
     };
   },
   mounted() {
+    this.getAllLog();
     socket.on("receive_Msg", (obj) => {
       if (this.displayName != obj.displayName) {
         this.data.push({
@@ -63,6 +65,32 @@ export default {
     });
   },
   methods: {
+    getAllLog() {
+      axios
+        .post(apiUrl + "/room/GetAll", {})
+        .then((response: { data: any }) => {
+          console.log(response);
+          if (response.data && response.data.length > 0)
+            response.data.forEach((log: any) => {
+              this.data.push(log);
+            });
+          this.$nextTick(() => {
+            if (this.$refs.msgContainer) {
+              (this.$refs.msgContainer as any).scrollTop = (
+                this.$refs.msgContainer as any
+              ).scrollHeight;
+            }
+          });
+        });
+    },
+    createLog(param: any) {
+      axios
+        .post(apiUrl + "/room/Create", param)
+        .then((response: { data: any }) => {
+          console.log(response);
+        });
+    },
+
     handleSubmit(e: any) {
       console.log("訊息發送！！！");
       console.log("名字：", this.displayName);
@@ -70,16 +98,15 @@ export default {
       if (_.isEmpty(this.displayName)) {
         alert("請輸入名字");
       } else {
-        this.data.push({
+        let chatlog = {
           displayName: this.displayName ? this.displayName : "無名氏",
           userType: this.userType,
           text: this.text,
-        });
-        socket.emit("send_Msg", {
-          displayName: this.displayName ? this.displayName : "無名氏",
-          userType: this.userType,
-          text: this.text,
-        });
+        };
+        this.data.push(chatlog);
+        this.createLog(chatlog);
+        socket.emit("send_Msg", chatlog);
+        // socket.emit("send_Msg", chatlog);
 
         this.text = "";
         this.$nextTick(() => {
@@ -96,6 +123,7 @@ export default {
   },
 };
 </script>
+
 <template class="chatroom">
   <form class="chatroom_block chatroom" @submit.prevent="handleSubmit">
     <input

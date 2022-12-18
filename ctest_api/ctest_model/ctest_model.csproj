@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="entity\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="interface\" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Startup.cs" />
+    <Compile Remove="Entities\AdvertiseType.cs" />
+    <Compile Remove="Entities\Account.cs" />
+    <Compile Remove="Entities\Advertise.cs" />
+    <Compile Remove="Entities\AdvertiseSlide.cs" />
+    <Compile Remove="Entities\CourseRecord.cs" />
+    <Compile Remove="Entities\Purchase.cs" />
+    <Compile Remove="Entities\Overtime.cs" />
+    <Compile Remove="Entities\User.cs" />
+    <Compile Remove="Entities\staff.cs" />
+    <Compile Remove="Entities\UserRole.cs" />
+    <Compile Remove="Entities\Company.cs" />
+    <Compile Remove="Entities\Course.cs" />
+    <Compile Remove="Entities\Custom.cs" />
+    <Compile Remove="Entities\StoreBranch.cs" />
+    <Compile Remove="Entities\CourseType.cs" />
+    <Compile Remove="Entities\StoreStock.cs" />
+    <Compile Remove="Entities\CourseBindCoach.cs" />
+    <Compile Remove="Entities\CourseOrder.cs" />
+    <Compile Remove="Entities\Holiday.cs" />
+    <Compile Remove="Entities\StoreStockSize.cs" />
+    <Compile Remove="Entities\StorePerson.cs" />
+    <Compile Remove="Entities\StoreShoptype.cs" />
+    <Compile Remove="Entities\UserStudent.cs" />
+    <Compile Remove="Entities\Work.cs" />
+    <Compile Remove="Entities\PosUser.cs" />
+    <Compile Remove="Entities\HolidayType.cs" />
+    <Compile Remove="Entities\WorkBindStaff.cs" />
+    <Compile Remove="Entities\UserCoach.cs" />
+    <Compile Remove="Entities\Pay.cs" />
+    <Compile Remove="Entities\CourseBindOrder.cs" />
+    <Compile Remove="Entities\CourseTime.cs" />
+    <Compile Remove="Entities\mmsContext.cs" />
+  </ItemGroup>
+</Project>

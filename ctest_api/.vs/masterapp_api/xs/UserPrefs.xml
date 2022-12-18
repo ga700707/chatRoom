@@ -1,0 +1,61 @@
+﻿<Properties StartupConfiguration="{45B82D9A-9AFE-4629-AE66-88D6B05C5F1F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/5.0.402/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets">
+    <Files>
+      <File FileName="masterapp_api/Program.cs" Line="12" Column="1" />
+      <File FileName="masterapp_modal/Repository.cs" Line="77" Column="30" />
+      <File FileName="masterapp_api/Startup.cs" Line="101" Column="12" />
+      <File FileName="masterapp_api/appsettings.json" Line="17" Column="28" />
+      <File FileName="masterapp_modal/Startup.cs" Line="11" Column="26" />
+      <File FileName="masterapp_modal/Program.cs" Line="1" Column="1" />
+      <File FileName="masterapp_modal/interface/IRepository.cs" Line="11" Column="27" />
+      <File FileName="masterapp_api/Controllers/HomeController.cs" Line="6" Column="1" />
+      <File FileName="mms_service/UserS.cs" Line="20" Column="1" />
+      <File FileName="mms_service/InterFace/IUserS.cs" Line="3" Column="29" />
+      <File FileName="mms_service/BaseS.cs" Line="20" Column="16" />
+      <File FileName="masterapp_modal/Entities/Account.cs" Line="6" Column="35" />
+      <File FileName="masterapp_api/Properties/launchSettings.json" Line="22" Column="48" />
+      <File FileName="masterapp_model/Entities/mmsContext.cs" Line="60" Column="1" />
+      <File FileName="../../../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/bin/MSBuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2216" Column="21" />
+      <File FileName="masterapp_model/masterapp_model.csproj" Line="23" Column="85" />
+      <File FileName="masterapp_service/masterapp_service.csproj" Line="13" Column="54" />
+      <File FileName="mms_service/mms_service.csproj" Line="1" Column="1" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/5.0.402/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="240" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="masterapp_api" expanded="True">
+            <Node name="masterapp_model" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="mms_service" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="InterFace" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.masterapp__viewmodal FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>mms_viewmodel/mms_viewmodal.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.masterapp__api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/liouting-hou/Desktop/project/mooto/masterapp_api/mms_service/UserS.cs" relfile="mms_service/UserS.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

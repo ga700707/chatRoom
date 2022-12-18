@@ -1,0 +1,12 @@
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/ctest_viewmodel.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/ctest_viewmodel.deps.json
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/ctest_viewmodel.pdb
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/Microsoft.EntityFrameworkCore.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/Microsoft.Extensions.DependencyInjection.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/MySqlConnector.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/System.Diagnostics.DiagnosticSource.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/ctest_model.dll
+/Users/mac/Desktop/Project/vue-project/chatRoom/ctest_api/api/ctest_model.pdb
