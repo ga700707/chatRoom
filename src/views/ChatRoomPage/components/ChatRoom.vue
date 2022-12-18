@@ -6,10 +6,20 @@ import EcosystemIcon from "../../../components/icons/IconEcosystem.vue";
 import CommunityIcon from "../../../components/icons/IconCommunity.vue";
 import SupportIcon from "../../../components/icons/IconSupport.vue";
 import { UserTypeEnum } from "@/enum/user-type-enum";
+import io from "socket.io-client";
+
 import _ from "lodash";
 </script>
 <script lang="ts">
+const socket = io("http://127.0.0.1:3000");
+
 export default {
+  sockets: {
+    connect: function () {
+      console.log("socket connected");
+    },
+  },
+
   data() {
     return {
       displayName: "",
@@ -34,7 +44,24 @@ export default {
       ],
     };
   },
-
+  mounted() {
+    socket.on("receive_Msg", (obj) => {
+      if (this.displayName != obj.displayName) {
+        this.data.push({
+          displayName: obj.displayName,
+          userType: UserTypeEnum.接收者,
+          text: obj.text,
+        });
+        this.$nextTick(() => {
+          if (this.$refs.msgContainer) {
+            (this.$refs.msgContainer as any).scrollTop = (
+              this.$refs.msgContainer as any
+            ).scrollHeight;
+          }
+        });
+      }
+    });
+  },
   methods: {
     handleSubmit(e: any) {
       console.log("訊息發送！！！");
@@ -48,12 +75,20 @@ export default {
           userType: this.userType,
           text: this.text,
         });
+        console.log(this.$socket);
+        this.$socket.emit("send_Msg", {
+          displayName: this.displayName ? this.displayName : "無名氏",
+          userType: this.userType,
+          text: this.text,
+        });
+
         this.text = "";
         this.$nextTick(() => {
-          if(this.$refs.msgContainer){
-            (this.$refs.msgContainer as any).scrollTop = (this.$refs.msgContainer as any).scrollHeight
+          if (this.$refs.msgContainer) {
+            (this.$refs.msgContainer as any).scrollTop = (
+              this.$refs.msgContainer as any
+            ).scrollHeight;
           }
-          
         });
       }
 
