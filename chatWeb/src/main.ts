@@ -16,7 +16,7 @@ const app = createApp(App);
 // const options = { path: '/' }; //Options object to pass into SocketIO
 const optionsVueIO = new VueSocketIO({
     debug: true,
-    connection: SocketIO('http://35.202.181.48:3000')
+    connection: SocketIO('http://34.172.211.20:3000')
 })
 
 optionsVueIO.install = (function (app: typeof App) {

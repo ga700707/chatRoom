@@ -11,7 +11,7 @@ import io from "socket.io-client";
 import _ from "lodash";
 </script>
 <script lang="ts">
-const socket = io("http://35.202.181.48:3000");
+const socket = io("http://34.172.211.20:3000");
 
 export default {
   sockets: {
