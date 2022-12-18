@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 const io = new Server(server, {
   allowEIO3: true,
   cors: {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","http://35.202.181.48"],
     credentials: true,
   },
 });
@@ -35,7 +35,10 @@ io.on("connection", (socket) => {
     // socket.emit("receiveMsg", obj);
   });
 });
+server.listen(3000, '0.0.0.0'),() =>{
+  console.log("listening on *:3000");
 
-server.listen(3000, () => {
+};
+server.listen(3000,() => {
   console.log("listening on *:3000");
 });

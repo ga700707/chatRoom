@@ -11,7 +11,7 @@ import io from "socket.io-client";
 import _ from "lodash";
 </script>
 <script lang="ts">
-const socket = io("http://127.0.0.1:3000");
+const socket = io("http://35.202.181.48:3000");
 
 export default {
   sockets: {
@@ -75,8 +75,7 @@ export default {
           userType: this.userType,
           text: this.text,
         });
-        console.log(this.$socket);
-        this.$socket.emit("send_Msg", {
+        socket.emit("send_Msg", {
           displayName: this.displayName ? this.displayName : "無名氏",
           userType: this.userType,
           text: this.text,

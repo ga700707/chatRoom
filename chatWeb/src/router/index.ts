@@ -5,13 +5,13 @@ import ChatRoomView from "../views/ChatRoomPage/ChatRoomView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // {
+    //   path: "/",
+    //   name: "home",
+    //   component: HomeView,
+    // },
     {
       path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/chatroom",
       name: "chatroom",
       component: ChatRoomView,
     },
