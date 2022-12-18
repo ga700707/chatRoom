@@ -74,3 +74,7 @@ npm install postcss-nesting
 npm install -D postcss-nesting
 npx tailwindcss -i ./src/style.scss -o ./dist/output.css --watch
 ```
+
+### Pm2 - SocketIO
+sudo npm install pm2 -g
+sudo pm2 start node index.js
