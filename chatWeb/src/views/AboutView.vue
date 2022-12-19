@@ -72,8 +72,6 @@ export default defineComponent({
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { ClockCircleOutlined } from '@ant-design/icons-vue';
-import { defineComponent } from 'vue';
-
 interface DataItem {
   title: string;
   description: string[];
