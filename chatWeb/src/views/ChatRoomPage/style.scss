@@ -34,7 +34,7 @@
     &_content {
         padding: 20px 0px 10px;
         height: calc(100% - 40px);
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     &_name-input {
@@ -44,8 +44,17 @@
         width: 30%;
         left: 8px;
         right: 2px;
-        // vertical-align: top;
-        // background-color: hsla(100, 100%, 100%, .);
+        height: 30px;
+        font-size: medium;
+        z-index: 2;
+    }
+    &_people-count {
+        position: absolute;
+        padding-right: 5px;
+        top: 4px;
+        width: 30%;
+        left: 8px;
+        right: 2px;
         height: 30px;
         font-size: medium;
         z-index: 2;
@@ -63,6 +72,9 @@
         font-size: medium;
 
         border-top: 4px solid hsla(160, 100%, 37%, .5);
+        &:focus {
+            border-color: hsla(160, 100%, 37%, .001);
+        }
     }
 
     &_text {

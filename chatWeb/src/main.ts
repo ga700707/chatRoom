@@ -7,6 +7,8 @@ import router from "./router";
 import VueSocketIO from 'vue-socket.io'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
 import "./assets/main.css";
 // import "/dist/output.css"
 import "./style.scss"
@@ -35,5 +37,6 @@ app.use(createPinia());
 app.use(router);
 app.use(optionsVueIO) 
 app.use(VueAxios, axios)
+app.use(Antd)
 app.provide('axios', app.config.globalProperties.axios)  // provide 'axios'
 app.mount("#app");

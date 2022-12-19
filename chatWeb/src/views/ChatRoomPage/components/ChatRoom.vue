@@ -26,6 +26,7 @@ export default {
       displayName: "",
       userType: UserTypeEnum.發送者,
       text: "",
+      count: 0,
       data: [
         {
           displayName: "路人1",
@@ -106,7 +107,6 @@ export default {
         this.data.push(chatlog);
         this.createLog(chatlog);
         socket.emit("send_Msg", chatlog);
-        // socket.emit("send_Msg", chatlog);
 
         this.text = "";
         this.$nextTick(() => {
@@ -132,6 +132,13 @@ export default {
       id="displayName"
       type="text"
       v-model="displayName"
+    />
+    <input
+      placeholder="瀏覽人數:"
+      class="chatroom_people-count"
+      id="count"
+      type="text"
+      v-model="count"
     />
 
     <div class="chatroom_title-block text-2xl text-center">
