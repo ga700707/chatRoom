@@ -86,3 +86,6 @@ sudo npm install pm2 -g
 sudo pm2 start "node index.js"
 sudo pm2 start "dotnet ctest_api.dll"
 ```
+
+### Starter
+https://blog.bitsrc.io/6-best-ways-to-create-a-new-react-application-57b17e5d331a

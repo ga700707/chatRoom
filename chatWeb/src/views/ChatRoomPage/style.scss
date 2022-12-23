@@ -63,8 +63,7 @@
     &_input {
         position: absolute;
         bottom: 0;
-        left: 1px;
-        right: 1px;
+        width: calc(100% - 100px);
         vertical-align: bottom;
         height: 40px;
         background-color: hsla(160, 100%, 50%, .5);
@@ -73,7 +72,8 @@
 
         border-top: 4px solid hsla(160, 100%, 37%, .5);
         &:focus {
-            border-color: hsla(160, 100%, 37%, .001);
+            border: 0px;
+            border-color: transparent;
         }
     }
 

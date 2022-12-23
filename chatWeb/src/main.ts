@@ -13,8 +13,9 @@ import "./assets/main.css";
 // import "/dist/output.css"
 import "./style.scss"
 
-
-const app = createApp(App);
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
 
 
 // const options = { path: '/' }; //Options object to pass into SocketIO
@@ -36,7 +37,10 @@ optionsVueIO.install = (function (app: typeof App) {
 app.use(createPinia());
 app.use(router);
 app.use(optionsVueIO) 
+app.use(VueMaterial)
+
 app.use(VueAxios, axios)
 app.use(Antd)
 app.provide('axios', app.config.globalProperties.axios)  // provide 'axios'
+
 app.mount("#app");
