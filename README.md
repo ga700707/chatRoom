@@ -42,13 +42,13 @@ sudo pm2 start "dotnet ctest_api.dll"
  - About 調整
 
 ### Day 04 - 2022/12/23 (未來架構重新規劃) 
- - 前期架構規劃: 
- - 資料庫: AWS DynamoDB
- - 後端: Golang + gitlab
- - 後端 GraphQL: gqlgen (參考資料: https://ithelp.ithome.com.tw/articles/10213118)
- - 前端: next.js + react + GraphQL + vercel
- - SocketIO server: node.js
- - 後期架構規劃:
- - app: Flutter + GraphQL 
- - 區塊鏈: python
+ 1. 前期架構規劃: 
+    - 資料庫: AWS DynamoDB
+    - 後端: Golang + gitlab
+    - 後端 GraphQL: gqlgen (參考資料: https://ithelp.ithome.com.tw/articles/10213118)
+    - 前端: next.js + react + GraphQL + vercel
+    - SocketIO server: node.js
+ 2. 後期架構規劃:
+    - app: Flutter + GraphQL 
+    - 區塊鏈: python
 
